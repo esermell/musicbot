@@ -4,7 +4,7 @@ ownerID: "374263413892710420", //write your discord user id.
 botInvite: "", //write your discord bot invite.
 supportServer: "", //write your discord bot support server invite.
 mongodbURL: "mongodb+srv://eaux:fwbxJzlMFteoCr4F@cluster0.g2hskvc.mongodb.net/?retryWrites=true&w=majority", //write your mongodb url.
-status: '❤️',
+status: 'Developed by Eaux',
 commandsDir: './commands', //Please don't touch
 language: "tr", //en, tr, nl, pt, fr, ar, zh_TW
 embedColor: "ffa954", //hex color code
