@@ -4,11 +4,11 @@ ownerID: "374263413892710420", //write your discord user id.
 botInvite: "", //write your discord bot invite.
 supportServer: "", //write your discord bot support server invite.
 mongodbURL: "", //write your mongodb url.
-status: '❤️ codeshare.me',
+status: '❤️',
 commandsDir: './commands', //Please don't touch
-language: "en", //en, tr, nl, pt, fr, ar, zh_TW
+language: "tr", //en, tr, nl, pt, fr, ar, zh_TW
 embedColor: "ffa954", //hex color code
-errorLog: "", //write your discord error log channel id.
+errorLog: "635077054160961536", //write your discord error log channel id.
   
     voteManager: { //optional
         status: false, //true or false
