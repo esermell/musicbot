@@ -1,132 +1,94 @@
-Bot Altyapı Projesine Hoşgeldin!
-=================
-Merhaba Arkadaşlar Bu Altyapı 2018 Yılında Yapılmış 5 Ekim 2022 Tarihinde İse Gerekli Düzeltmeleri Yapılmıştır. Bu Altyapı Discord.js v14 Sürümünü Artık Desteklemektedir! Kolaylıkla Kullanabilirsiniz!
+# Discord.js v14 Slash Commands Music Bot
+![](https://komarev.com/ghpvc/?username=umutxyp&color=blue)
 
-[Resmi Discord Sunucumuz](https://discord.gg/T2jXbtBjwj)
 
-[Resmi Youtube Kanalımız](https://www.youtube.com/channel/UCVRhrcoG6FOvHGKehYtvKHg?view_as=subscriber)
+## ABOUT V14.3 UPDATE / news: 2022, 2 DECEMBER
+- Addeed Arabic language.
+- Added auto play command.
 
-[Resmi İnstagram Hesabımız](https://www.instagram.com/emirhansarac06/)
+## ABOUT V14.2 UPDATE / news: 2022, 21 NOVEMBER 
+- Added seek command.
 
-Diğer Altyapılar!
-=================
-[Müzik Bot Altyapısı](https://youtu.be/V4qOOnSPfwA)
+## ABOUT V14.1 UPDATE / news: 2022, 20 NOVEMBER 
+- The shard feature has been added to the MusicMaker discord bot and now a new shard will be created for every 1000 servers.
 
-[Ayarlanabilen Emoji ile Rol Verme Altyapısı](https://www.youtube.com/watch?v=AjNbw0wODH8)
+## ABOUT V14 UPDATE / news: 2022, 10 NOVEMBER
+- Addeed Portuguese and Chinese language.
 
-[Kayıt Botu Altyapısı](https://www.youtube.com/watch?v=55_OEZ73yd4)
+## ABOUT V13.7 UPDATE / news: 2022, 2 OCTOBER
+- Added french language.
+- Filter command has been made manageable with buttons.
+- Minor bug fixes.
+- Shuffle command added.
 
-[Davet Botu Altyapısı](https://www.youtube.com/watch?v=drlPG8kgNdQ)
+## ABOUT V13.5 UPDATE / news: 2022, 4 SEPTEMBER
+- Added top.gg vote manager settings.
+- Added Dutch language
+- Use distube module
+- Event folders have been recreated.
+- The bot's database has been changed to mongodb.
+- Multi language option added.
+- Added personal playlist creation commands.
+- Added new player features. (config.js)
+- All commands are functionally optimized for discord.js v14.
+- Open music with youtube video link
+- Specify the specific channel in which the command will be used.
+- Added changing embed color code from settings file.
+- The /language command added so that the language system can be adjusted for each server.
+- Added detailed information about the specified command to the help command. (/help info command)
 
-[Captcha Botu Altyapısı](https://www.youtube.com/watch?v=DWxjCc6BuDA)
 
-[Slash Bot Altyapısı](https://www.youtube.com/watch?v=UZABvGw-oww)
+## About Bot
+- The excitement of listening to non-stop music 24/7.
+- Customizable commands.
+- Chance to set customizable dj role.
+- A chance to loop the music you want so it doesn't end.
+- Create your own playlist. Use it if you want, share it with everyone.
+- Add your favorite music to your playlist with one click and listen later.
+- Open music from dozens of supported audio platforms.
+- Add color to music with special sound filters.
 
-[Yönetim Panelli Bot Altyapısı](https://www.youtube.com/watch?v=HMT1UhQXQbA)
 
-Basit Hatalar ve Çözümleri!
-=================
-1 • Eğer hatanız;
-`Cannot find module 'blabla'`
-şeklindeyse modül kurmanız gerekmektedir.
-Modül kurmak için konsolu açıp `npm i blabla` yazınız.
-Glitch kullanıyorsanız basit kurulum yolu;
-1 • Package.json'a girin.
-2 • Yukarıdan Add Package basın.
-3 • İnmesi gereken paket ismini yazın ve çıkana basın.
-başarılı! 
+## Supported audio playback platforms:
+- YouTube
+- Spotify 
+- SoundCloud 
+- Vimeo
+- Reverbnation
+- Facebook
+- Attachment Links
+- TikTok
+- and 730 other platform.
 
-2 • Eğer hatanız;
-`ayarlar is not defined:`
-şeklindeyse hatayı aldığınız komutun en üstüne alttaki kodu girmeniz gerekli:
-`const ayarlar = require('../ayarlar.json')`
- yazın, sorun çözülecektir.
- 
+## Custom audio filters:
+3d, bassboost, echo, karaoke, nightcore, vaporwave, flanger, gate, haas, reverse, surround, mcompand, phaser, tremolo, earwax
 
- 3 • Eğer hatanız;
-`SyntaxError: Unexpected token };`
-Tarzında bir hata alıyorsanız, açıp kapatmadığınız veya kapatıp açmadığın bir paranteziniz vardır demek. Çözmek için hata oluşmadan önce en son eklediğiniz komuta bi' göz gezdirmek. Sorunu bulduğunuz zaman parantezleri düzelttiğinizde sorunda ortadan kalkar.
- 
-4 • Eğer hatanız; 
-`(node:6660) UnhandlePromiseRejectionWarning: Error: Incorrect login details were provided.`
-Tarzında ki bir token hatasında yapmanız gereken tek şey, https://discord.com/developers/applications sayfasına girip botunuza giriş yapmak, tokeninizi oradan kopyalayıp projenizde ki token gerektiren yere doğru bir şekilde "" içinde yapıştırın.
- 
-5 • Eğer hatanız; 
-`fields.flat is not a function`
-İse Node versiyonunuzu 12x yapın.
- 
-6 • Eğer Hatanız;
-`(node:223) UnhandledPromiseRejectionWarning: TypeError: Cannot read property 'id' of null`
-Şeklindeyse `if (!message.guild) return;` Komutun Başına Yazarak Çözebilirsiniz
+## Bot Setup
+[Click here for a setup video](https://youtu.be/mDKQJeWWvss), but these instructions are up to date so make sure to follow them if the video is different.
 
-7 • Eğer Hatanız;
-`TypeError: Cannot read property 'send' of undefined`
-Şeklindeyse Bot mesajı atacak bir kanalı bulamayınca yukarıda ki hatayı verir. Log kısmına bakıp hangi komutta hangi kanalın ayarlı olmadığını kontrol edin.
+- [Install node and npm](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm#using-a-node-version-manager-to-install-nodejs-and-npm)
+- Clone this repository or download as a zip and extract the contents.
+- Run `npm install`.
+- Bot login: write to .env file is `TOKEN=YOUR BOT TOKEN` or: write config.js file to your bot token.
 
-8 • Eğer Hatanız;
-`maxListeners`
- Hatanız da yukarıda ki gibi maxListeners geçiyor ise main dosyanızın bir bölümüne `client.setMaxListeners(30)` yazın. Sorun çözülecektir, çözülmez ise fazla client.on eventlerini silin.
- 
-9 • Eğer Hatanız;
-`DeprecationWarning:TextChannel#sendEmbed: use TextChannel#send instead`
-Bu uyarıyı verdiği zaman `<channel>.sendEmbed` eventini `<channel>.send` yapmanız gerekir
 
-10 • Eğer Böyle Bir Yazı Alıyorsanız;
-`DeprecationWarning: Collection#find: pass a function instead`
-Bu bir hata değil uyarıdır yapmanız gereken;
-`<collection>.find('name', 'isim')`
-Kodlarını
-`<collection>.find(x => x.name == 'name')`
-Şeklinde kullanırsanız sorun düzelecektir (Örnektir.)
+### Notes on Discord Bot Setup
+- Make sure to enable all intents in the Discord Developer Portal
+![image](https://user-images.githubusercontent.com/4060573/181925950-0403ec46-f606-4ae2-bac8-6a2e30d10d9f.png)
+- You will also need to invite the bot using the correct scope and permissions, which you can do here:
+![image](https://user-images.githubusercontent.com/4060573/181926061-310e817a-97c5-48d8-adce-77a505c36336.png)
 
- 11 • Eğer Hatanız;
-`UnhandledPromiseRejectionWarning: DiscordAPIError: Missing Permissions`
-Bu şekilde bir hata alıyorsanız bota uygulatmaya çalıştırdığınız işleme botun yetkisi yetmiyordur vereceğim kodu main dosyanıza atarak sorunu çözebilirsiniz.
- 
- 12 • Eğer Hatanız;
-`Something took to long to do` 
-Bu hatanın nedeni: Bir gün içerisinde 1000 defa botunuz tokene bağlantı kurduğu halinde veya Glitch, Heroku vb. sitelerde kullanıyorsanız bazenleri bu sitelerde 'tokeni kötüye kullanan' IP Ban yiyor ve çoğu proje remixleseniz dahi token ban yiyor. 
-Çözümü: 1-2 gün civarı bu böyle devam edebilir. İP Ban yemiş projeyi bulmanız gerek bu projeyi bulduğunuzda remixleyin hatanız düzelir.
- 
 
-`İyi Kullanımlar!`
+### Links
 
-Etiketler: discord bot altyapı glitch
-discord bot altyapı github
-discord bot altyapı
-discord bot altyapı v14
-discord bot altyapı v13
-discord bot altyapı v12
-discord bot altyapısı glitch
-discord bot altyapı 2022
-discord bot altyapı 2023
-discord bot altyapı visual studio code
-discord bot altyapı nasıl yapılır
-discord altyapı
-discord ban bot altyapı
-bot altyapı
-discord destek bot altyapı
-discord bot altyapısı github
-discord eğlence bot altyapı
-discord müzik bot altyapı glitch
-discord guard bot altyapı
-discord gif bot altyapı
-discord groovy bot altyapı
-discord nitro generator bot altyapı
-discord bot hazır altyapı
-discord bot hazır altyapı glitch
-discord bot yapma hazır altyapı
-discord bot altyapı indir
-discord invite bot altyapı
-discord.js bot altyapı
-discord kayıt bot altyapı
-discord bot list altyapı
-discord müzik bot altyapı
-discord moderasyon bot altyapı
-discord public bot altyapı
-discord register bot altyapı
-discord stat bot altyapı
-emirhan saraç discord bot altyapı
-discord hazır bot komutları
-discord uptime bot altyapı
+- [Fork Replit](https://replit.com/)
 
+- [MongoDB](https://mongodb.com)
+
+- [Discord Developers](https://discord.dev)
+
+- [Discord Permission](https://bit.ly/3L4RZpi)
+
+- [Download Visual Studio Code](https://code.visualstudio.com/download)
+
+- [Download NodeJS V17](https://nodejs.org/)
