@@ -3,7 +3,7 @@ TOKEN: "",
 ownerID: "374263413892710420", //write your discord user id.
 botInvite: "", //write your discord bot invite.
 supportServer: "", //write your discord bot support server invite.
-mongodbURL: "", //write your mongodb url.
+mongodbURL: "mongodb+srv://eaux:fwbxJzlMFteoCr4F@cluster0.g2hskvc.mongodb.net/?retryWrites=true&w=majority", //write your mongodb url.
 status: '❤️',
 commandsDir: './commands', //Please don't touch
 language: "tr", //en, tr, nl, pt, fr, ar, zh_TW
