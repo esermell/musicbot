@@ -26,11 +26,5 @@ app.get("/", (request, response) => {
 });
 app.listen(process.env.PORT);
 
-client.login(process.env.TOKEN || ayarlar.token)
+client.login(process.env.TOKEN)
 
-/*
-############################################################################
-#                           Discord Bot Altyapı v14                         #
-#               https://github.com/EmirhanSarac/discord-altyapi-bot         #
-############################################################################
-*/
