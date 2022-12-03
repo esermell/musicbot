@@ -25,7 +25,7 @@
   "scripts": {
     "start": "node index.js"
   },
-  "author": "UmutBayraktar",
+  "author": "Emre",
   "license": "ISC",
   "engines": {
     "node": "16.x"
