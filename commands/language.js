@@ -20,37 +20,17 @@ module.exports = {
         new ButtonBuilder()
           .setLabel("English")
           .setCustomId('en')
-          .setStyle(ButtonStyle.Secondary),
-        new ButtonBuilder()
-          .setLabel("Nederlands")
-          .setCustomId('nl')
-          .setStyle(ButtonStyle.Secondary),
-        new ButtonBuilder()
-          .setLabel("Arabic")
-          .setCustomId('ar')
-          .setStyle(ButtonStyle.Secondary),
-        new ButtonBuilder()
-          .setLabel("Français")
-          .setCustomId('fr')
           .setStyle(ButtonStyle.Secondary)
+    
       )
 
-      let buttons2 = new ActionRowBuilder().addComponents(
-            new ButtonBuilder()
-            .setLabel("Português")
-            .setCustomId('pt')
-            .setStyle(ButtonStyle.Secondary),
-            new ButtonBuilder()
-            .setLabel("正體中文")
-            .setCustomId('zh_TW')
-            .setStyle(ButtonStyle.Secondary)
-        )
+  
 
       let embed = new EmbedBuilder()
         .setColor(client.config.embedColor)
         .setTitle("Select a language")
         .setTimestamp()
-        .setFooter({ text: `MusicMaker ❤️` })
+        .setFooter({ text: `Eaux ❤️` })
       interaction.reply({ embeds: [embed], components: [buttons, buttons2] }).then(async Message => {
 
         const filter = i => i.user.id === interaction.user.id
@@ -81,60 +61,7 @@ module.exports = {
               await col.stop()
               break
 
-            case 'nl':
-              await db?.musicbot?.updateOne({ guildID: interaction.guild.id }, {
-                $set: {
-                  language: 'nl'
-                }
-              }, { upsert: true }).catch(e => { })
-              await interaction.editReply({ content: `De taal van de bot was nederlands. :flag_nl:`, embeds: [], components: [], ephemeral: true }).catch(e => { })
-              await button.deferUpdate().catch(e => { })
-              await col.stop()
-              break
-
-              case 'fr':
-              await db?.musicbot?.updateOne({ guildID: interaction.guild.id }, {
-                $set: {
-                  language: 'fr'
-                }
-              }, { upsert: true }).catch(e => { })
-              await interaction.editReply({ content: `La langue du bot a été modifiée avec succès en français. :flag_fr:`, embeds: [], components: [], ephemeral: true }).catch(e => { })
-              await button.deferUpdate().catch(e => { })
-              await col.stop()
-              break
-
-              case 'pt':
-              await db?.musicbot?.updateOne({ guildID: interaction.guild.id }, {
-                $set: {
-                  language: 'pt'
-                }
-              }, { upsert: true }).catch(e => { })
-              await interaction.editReply({ content: `Língua do bot definida para Português - Brasil com sucesso. :flag_br:`, embeds: [], components: [], ephemeral: true }).catch(e => { })
-              await button.deferUpdate().catch(e => { })
-              await col.stop()
-              break
-
-              case 'ar':
-                await db?.musicbot?.updateOne({ guildID: interaction.guild.id }, {
-                  $set: {
-                    language: 'ar'
-                  }
-                }, { upsert: true }).catch(e => { })
-                await interaction.editReply({ content: `تم تغيير لغة البوت بنجاح إلى اللغة العربية: :flag_ps:`, embeds: [], components: [], ephemeral: true }).catch(e => { })
-                await button.deferUpdate().catch(e => { })
-                await col.stop()
-                break
-              
-			case 'zh_TW':
-        await db?.musicbot?.updateOne({ guildID: interaction.guild.id }, {
-          $set: {
-            language: 'zh_TW'
-          }
-        }, { upsert: true }).catch(e => { })
-        await interaction.editReply({ content: `機器人成功設為正體中文 :flag_tw:`, embeds: [], components: [], ephemeral: true }).catch(e => { })
-        await button.deferUpdate().catch(e => { })
-        await col.stop()
-        break
+            
 
           }
         })
@@ -152,7 +79,7 @@ module.exports = {
               .setColor(client.config.embedColor)
               .setTitle("Time ended, please try again.")
               .setTimestamp()
-              .setFooter({ text: `MusicMaker ❤️` })
+              .setFooter({ text: `Eaux ❤️` })
 
             await interaction.editReply({ embeds: [embed], components: [buttons] }).catch(e => { })
           }

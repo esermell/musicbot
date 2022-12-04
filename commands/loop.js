@@ -37,7 +37,7 @@ module.exports = {
         .setTitle(lang.msg38)
         .setDescription(lang.msg39)
         .setTimestamp()
-        .setFooter({ text: `MusicMaker ❤️` })
+        .setFooter({ text: `Eaux ❤️` })
       interaction.reply({ embeds: [embed], components: [button], fetchReply: true }).then(async Message => {
         await db.loop.updateOne({ userID: interaction.user.id, guildID: interaction.guild.id, channelID: interaction.channel.id }, {
           $set: {
@@ -89,7 +89,7 @@ module.exports = {
             .setColor(client.config.embedColor)
             .setTitle(lang.msg46)
             .setTimestamp()
-            .setFooter({ text: `MusicMaker ❤️` })
+            .setFooter({ text: `Eaux ❤️` })
 
           await interaction.editReply({ content: "", embeds: [embed], components: [button] }).catch(e => { });
         })

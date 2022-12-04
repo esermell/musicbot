@@ -41,7 +41,7 @@ module.exports = {
         .setThumbnail(client.user.displayAvatarURL({ dynamic: true, size: 1024 }))
         .setDescription(`**
     • Owner: \`${client.users.cache.get(config.ownerID)?.tag || "Undefined"}\`
-    • Developer: \`Umut#6070\`
+    • Developer: \`Eaux> Emre||\`
     • User Count: \`${totalMembers || 0}\`
     • Server Count: \`${totalGuilds || 0}\`
     • Channel Count: \`${totalChannels || 0}\`
