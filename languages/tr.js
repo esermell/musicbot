@@ -1,7 +1,7 @@
 const language = {
     loadevent: "Yüklenen player eventi",
     loadcmd: "Yüklenen komut",
-    ready: " başarıyla bağlandı.",
+    ready: " başarıyla bağlandı.✅",
     loadslash: "Uygulama [/] komutları başarıyla yeniden yüklendi.",
     error1: "Projenize Girdiğiniz Bot Tokeni Yanlış Veya Botunuzun İNTENTLERİ KAPALI!",
     error2: "Lütfen projenizdeki bot tokeninizi config.js veya .env dosyanızda ayarlayın!",
