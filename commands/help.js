@@ -44,7 +44,7 @@ module.exports = {
             { name: `${lang.msg33}`, value: commands.map(x => `\`/${x.name}\``).join(' | ') }
           ])
           .setTimestamp()
-          .setFooter({ text: `MusicMaker ❤️` })
+          .setFooter({ text: `Eaux ❤️` })
         interaction.reply({ embeds: [embed] }).catch(e => { })
       }
 
